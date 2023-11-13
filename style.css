@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Lobster&display=swap');
 :root {
     --cor-fundo: #191919;
-    --cor-fundo-caixas: rgba(255, 255, 255, 0.627);
-    --cor-botao: #828282;
+    --cor-fundo-caixas: rgb(197, 162, 119);
+    --cor-botao: rgb(185, 93, 40);
     --cor-botao-ativo: #4e4e4e;
+    --cor-texto-especial: rgb(94, 62, 169);
 }
 
 html, body {
@@ -17,26 +19,97 @@ main {
     width: 100vw;
     margin: 0 auto;
     background-image: url("imgs/mesa.png"), url("imgs/personagem.png"), url("imgs/fundo-livros.jpg");
-    background-repeat: no-repeat, no-repeat, repeat;
+    background-repeat: repeat, no-repeat, repeat;
     background-position: bottom, center, center;
     background-size: contain, 27%, auto;
-    display: flex;
-    align-items:last baseline;
-    justify-content: center;
+    overflow: hidden;
 }
 
+#biblioteca {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    display: grid; 
+    grid-template-columns: 0.75fr 0.75fr 1.5fr; 
+    grid-template-rows: 1.4fr 0.5fr 1.1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "titulo titulo ."
+      "titulo titulo ."
+      "start start start"; 
+
+}
+
+#historia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#historia article {
+    height: auto;
+    width: 60vw;
+    background-color: var(--cor-fundo-caixas);
+    border-radius: 2.5rem;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#historia h2 {
+    margin: 4vw 0 3vw;
+}
+
+#historia p {
+    /* line-height: 2rem; */
+    margin: 0 10vh 1.5vw;
+    text-align: justify;
+    font-size: 3.5vh;
+}
+
+#titulo {
+    grid-area: titulo;
+    background-color: transparent;
+}
+
+#titulo h1 {
+    color: var(--cor-texto-especial);
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Caveat', cursive;
+    font-size: 10vh;
+    background-color: var(--cor-fundo-caixas);
+    border-radius: 2.5rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+}
+
+
+#start { 
+grid-area: start;
+margin-left: auto;
+margin-right: auto;
+ }
+
 .invisivel {
-    display: none;
+    display: none !important;
 }
 
 section {
     border-radius: 1vw;
-    background-color: var(--cor-fundo-caixas);
+    /* background-color: var(--cor-fundo-caixas); */
+    background-color: transparent;
     text-align: center;
 }
 
 #start {
-    position: fixed;
     margin: auto;
     height: 15vh;
     width: 20vw;
@@ -44,12 +117,22 @@ section {
     background-color: transparent;
 }
 
-#start button {
+#start button, #next {
     padding: 0 4rem;
     border: 0;
     border-radius: 1rem;
     background-color: var(--cor-botao);
     cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#historia #next {
+    height: 2rem;
+    margin: 1rem;
+}
+
+#historia #next h2 {
+    margin: 0;
 }
 
 #start button:active {

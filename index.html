@@ -8,21 +8,50 @@
 </head>
 <body>
     <main> 
-        <section id="start" >
-            <button><h2>Start</h2></button>
-        </section>
+        <div id="biblioteca">
 
-        <section id="quiz" class="invisivel">
-            <h3 id="pergunta">Uma pergunta qualquer</h3>
-            <ol>
-                <li id="A" class="respostas">sla</li>
-                <li id="B" class="respostas">alguma coisa</li>
-                <li id="C" class="respostas">alguma outra coisa</li>
-                <li id="D" class="respostas">sla outra coisa</li>
-            </ol>
-        </section>
+            <section id="titulo">
+                <h1>Quiz time</h1>
+            </section>
+            <section id="start">
+                <button><h2>Start</h2></button>
+            </section>
+    
+            <!-- <section id="quiz" class="invisivel">
+                <h3 id="pergunta">Uma pergunta qualquer</h3>
+                <ol>
+                    <li id="A" class="respostas">sla</li>
+                    <li id="B" class="respostas">alguma coisa</li>
+                    <li id="C" class="respostas">alguma outra coisa</li>
+                    <li id="D" class="respostas">sla outra coisa</li>
+                </ol>
+            </section> -->
+
+            <section id="historia" class="invisivel">
+                <article>
+                    <h2>Um pouco de História</h2>
+                    <p>
+                        As provas gerais estão chegando e por sorte uma linda garota de sua sala te convidou para estudarem juntos na casa dela. 
+                        Hoje é o dia de vizita-lá e decide ir o mais rápido possível, pois ela mora longe.
+                    </p>
+                    <p> 
+                        A garota mora no meio do nada e você quase se perde, mas não há problemas! Ela é linda e inteligente. 
+                        Sua colega olha envolta e te chama para entrar na velha e grande casa
+                    </p>
+                    <button id="next"><h2>next</h2></button>
+                </article>
+                <article id="falas-introducao" class="invisivel">
+                    <ul>
+                        <li>Sinta-se em casa! Fiz chá, por favor aceite.</li>
+                        <li>* você aceita e toma o chá *</li>
+                        <li>Queria dizer q gosto muito de você, por isso preparei um jogo de quiz especial só para você! Me siga</li>
+                        <li>Você se levanta anda alguns passos e logo sua visão escurece e o ar parece escasso. Você desmaia</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
     </main>
 
-    <script src="js/criarPergunta.js"></script>
+    <script src="js/transicao.js"></script>
 </body>
 </html>
