@@ -1,0 +1,80 @@
+:root {
+    --cor-fundo: #191919;
+    --cor-fundo-caixas: rgba(255, 255, 255, 0.627);
+    --cor-botao: #828282;
+    --cor-botao-ativo: #4e4e4e;
+}
+
+html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cor-fundo);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-image: url("imgs/mesa.png"), url("imgs/personagem.png"), url("imgs/fundo-livros.jpg");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: bottom, center, center;
+    background-size: contain, 27%, auto;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+}
+
+.invisivel {
+    display: none;
+}
+
+section {
+    border-radius: 1vw;
+    background-color: var(--cor-fundo-caixas);
+    text-align: center;
+}
+
+#start {
+    position: fixed;
+    margin: auto;
+    height: 15vh;
+    width: 20vw;
+    padding: 2vw;
+    background-color: transparent;
+}
+
+#start button {
+    padding: 0 4rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: var(--cor-botao);
+    cursor: pointer;
+}
+
+#start button:active {
+    background-color: var(--cor-botao-ativo);
+}
+
+#quiz {
+    min-width: 50vw;
+    min-height: 35vh;
+    padding: 1rem;
+    font-size: larger;
+}
+
+#quiz ol {
+    list-style: upper-alpha;
+    padding: 0 10%;
+}
+
+#quiz ol li {
+    text-align: justify;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+#quiz ol li:hover {
+    background-color: var(--cor-botao-ativo);
+}
