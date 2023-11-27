@@ -1,5 +1,5 @@
 :root {
-    --cor-sections-quiz: rgba(77, 77, 77, 0.851);
+    --cor-sections-quiz: rgba(159, 158, 158, 0.851);
 }
 
 main {
@@ -12,7 +12,7 @@ main {
     background-position: bottom, center, center;
     background-size: contain, 40vh, cover;
     grid-template-columns: 0.8fr 1.4fr 0.8fr;
-    grid-template-rows: 0.2fr .6fr 0.6fr 0.2fr;
+    grid-template-rows: 0.2fr .6fr 0.7fr 0.2fr;
     gap: 1%;
     grid-template-areas:
         "time time time"
