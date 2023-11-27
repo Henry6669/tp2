@@ -1,13 +1,24 @@
+:root {
+    --cor-sections-quiz: rgba(77, 77, 77, 0.851);
+}
+
 main {
-    display: grid; 
-    grid-template-columns: 0.5fr 1.9fr 0.6fr; 
-    grid-template-rows: 0.2fr 0.2fr 2.6fr; 
-    gap: 1% 1%;  
-    grid-template-areas: 
-        "time time time"
-        "vida vida vida"
-        ". quiz .";
+    display: grid;
+    width: 99vw;
     height: 100vh;
+    background-image: url("../imgs/mesa.png"), url("../imgs/personagem-2.png"), url("../imgs/fundo-porao.jpeg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    transition: 0.3s ease all;
+    background-position: bottom, center, center;
+    background-size: contain, 40vh, cover;
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    grid-template-rows: 0.2fr .6fr 0.6fr 0.2fr;
+    gap: 1%;
+    grid-template-areas:
+        "time time time"
+        ". . ."
+        ". quiz ."
+        "vida quiz .";
 }
 
 #time { grid-area: time; }
@@ -19,8 +30,10 @@ main section {
 }
 
 #quiz {
+    background-color: var(--cor-sections-quiz);
     padding: 1rem;
-    font-size: larger;
+    font-size: 2vh;
+    margin: 1rem;
 }
 
 #quiz ol {
@@ -47,7 +60,7 @@ main section {
 
 #time div {
     height: 10%;
-    width: 80%;
+    width: 95%;
     background-color: rgb(105, 102, 102);
     border-radius: 2rem;
     display: flex;
@@ -63,7 +76,7 @@ main section {
 
 #vida div {
     height: 10%;
-    width: 80%;
+    width: 60%;
     background-color: rgb(105, 102, 102);
     border-radius: 2rem;
     display: flex;

@@ -5,7 +5,7 @@ main {
     background-image: url("../imgs/mesa.png"), url("../imgs/personagem.png"), url("../imgs/fundo-livros.jpg");
     background-repeat: repeat, no-repeat, repeat;
     background-position: bottom, center, center;
-    background-size: contain, 27%, auto;
+    background-size: contain, 40vh, auto;
     overflow: hidden;
 }
 

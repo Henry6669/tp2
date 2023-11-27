@@ -6,10 +6,12 @@ function salvarJogador() {
 
     if(inputNome.value === "") {
         inputNome.classList.add("errado");
+        playerLogado = false
     } 
 
     if(inputSenha.value === "") {
         inputSenha.classList.add("errado");
+        playerLogado = false;
     } 
 
     if(inputNome.value.length > 0 && inputSenha.value.length > 0) {
@@ -26,11 +28,11 @@ function salvarJogador() {
         let playerString = JSON.stringify(player);
     
         localStorage.setItem(player.nome, playerString);
-        playerSalvo = true;
+        playerLogado = true;
         salvarJogadorAtual();
     }
     else {
-        playerSalvo = false;
+        playerLogado = false;
     }
 }
 
@@ -55,10 +57,12 @@ function carregarJogador() {
 
     if(inputNome.value === "") {
         inputNome.classList.add("errado");
+        playerLogado = false
     } 
 
     if(inputSenha.value === "") {
         inputSenha.classList.add("errado");
+        playerLogado = false;
     } 
 
     if(inputNome.value.length > 0 && inputSenha.value.length > 0) {
@@ -67,15 +71,17 @@ function carregarJogador() {
         if(playerCarregado.senha == inputSenha.value) {
             player = playerCarregado;
             definirDificuldadeNivel(player.dificuldade);
+            player.perguntas.pop();
             salvarJogadorAtual();
+            playerLogado = true;
         } 
         else {
-            playerSalvo = false;
+            playerLogado = false;
             inputSenha.classList.add("errado");
         }
     }
     else {
-        playerSalvo = false;
+        playerLogado = false;
     }
 }
 
@@ -104,10 +110,10 @@ $("#salvar-usuario").click(function () {
     }
 })
 
-let playerCarregado = true;
+let playerLogado = true;
 $("#carregar-usuario").click(function () {
     carregarJogador();
-    if(playerCarregado) {
+    if(playerLogado) {
         $("#config").addClass("invisivel")
         $("#historia").removeClass("invisivel");
     }

@@ -1,100 +1,100 @@
 {
     "perguntas":[
         {
-            "pergunta": "Pergunta 1",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
+            "pergunta": "Qual animal representa o símbolo da paz?",
+            "respostaA": "Pomba",
+            "respostaB": "Gato",
+            "respostaC": "Pardal",
+            "respostaD": "Gavião",
+            "respostaCorreta": "A"
+        },
+        {
+            "pergunta": "O sushi é um prato original de qual país?",
+            "respostaA": "Tailândia",
+            "respostaB": "China",
+            "respostaC": "Japão",
+            "respostaD": "Coreia",
+            "respostaCorreta": "C"
+        },
+        {
+            "pergunta": "Quem foi o inventor do telefone?",
+            "respostaA": "Thomas Edison",
+            "respostaB": "Alexander Graham Bell",
+            "respostaC": "Nikola Tesla",
+            "respostaD": "Guglielmo Marconi",
+            "respostaCorreta": "B"
+        },
+        {
+            "pergunta": "O vinho é feito a partir de qual fruta?",
+            "respostaA": "Framboesa",
+            "respostaB": "Morango",
+            "respostaC": "Açaí",
+            "respostaD": "Uva",
             "respostaCorreta": "D"
         },
         {
-            "pergunta": "Pergunta 2",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
+            "pergunta": "Quem invetou o avião?",
+            "respostaA": "Irmãos Wright",
+            "respostaB": "Paulo Coelho",
+            "respostaC": "Santos Dumont",
+            "respostaD": "Leonardo Da Vinci",
+            "respostaCorreta": "C"
+        },
+        {
+            "pergunta": "Quantos dias tem um ano bissexto",
+            "respostaA": "364 dias",
+            "respostaB": "365 dias",
+            "respostaC": "367 dias",
+            "respostaD": "366 dias",
             "respostaCorreta": "D"
         },
         {
-            "pergunta": "Pergunta 3",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
+            "pergunta": "Qual evento histórico aconteceu entre os anos de 1914 e 1918",
+            "respostaA": "primeira guerra mundial",
+            "respostaB": "guerra do paraguai",
+            "respostaC": "chegada do homem à lua",
+            "respostaD": "queda do muro de Berlim",
+            "respostaCorreta": "A"
+        },
+        {
+            "pergunta": "Em qual data é comemorada a Independêcia do Brasil?",
+            "respostaA": "11 de setembro",
+            "respostaB": "7 de outubro",
+            "respostaC": "14 de setembro",
+            "respostaD": "7 de setembro",
             "respostaCorreta": "D"
         },
         {
-            "pergunta": "Pergunta 5",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
+            "pergunta": "Qual foi o navegador português que chegou ao Brasil em meados de 1500",
+            "respostaA": "chrome",
+            "respostaB": "Pedro Álvares Cabral",
+            "respostaC": "Cristóvão Colombo",
+            "respostaD": "Fernão de Magalhães",
+            "respostaCorreta": "B"
+        },
+        {
+            "pergunta": "Qual país foi pioneiro na Revolução Industrial",
+            "respostaA": "Rússia",
+            "respostaB": "Estados Unidos",
+            "respostaC": "Alemanha",
+            "respostaD": "Inglaterra",
             "respostaCorreta": "D"
         },
         {
-            "pergunta": "Pergunta 6",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
+            "pergunta": "que século era no ano de 1805",
+            "respostaA": "XX",
+            "respostaB": "XIX",
+            "respostaC": "XVII",
+            "respostaD": "XIV",
+            "respostaCorreta": "B"
         },
         {
-            "pergunta": "Pergunta 7",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 8",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 9",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 10",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 11",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 12",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
-        },
-        {
-            "pergunta": "Pergunta 13",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
+            "pergunta": "Qual elemento representa o Cu na tabela periódica",
+            "respostaA": "cobre",
+            "respostaB": "calcio",
+            "respostaC": "culumim",
+            "respostaD": "curico",
+            "respostaCorreta": "A"
         },
         {
             "pergunta": "Pergunta 14",
@@ -103,6 +103,86 @@
             "respostaC": "resposta c",
             "respostaD": "resposta d",
             "respostaCorreta": "D"
+        },
+        {
+            "pergunta": "Em qial galáxia nosso planeta se encontra",
+            "respostaA": "Galáxia de Andrômeda",
+            "respostaB": "Via Lactose",
+            "respostaC": "Via Láctea",
+            "respostaD": "Galáxia Redemoinho",
+            "respostaCorreta": "C"
+        },
+        {
+            "pergunta": "Qual planeta é conhecido como \"planeta vermelho\"?",
+            "respostaA": "Terra",
+            "respostaB": "Marte",
+            "respostaC": "Júpter",
+            "respostaD": "Mercúrio",
+            "respostaCorreta": "B"
+        },
+        {
+            "pergunta": "Em qual cidade fica o famoso monumento do Coliseu?",
+            "respostaA": "Barcelona",
+            "respostaB": "Pisa",
+            "respostaC": "Atenas",
+            "respostaD": "Roma",
+            "respostaCorreta": "D"
+        },
+        {
+            "pergunta": "O Brasil é dividido em quantas regiões?",
+            "respostaA": "3 regiões",
+            "respostaB": "4 regiões",
+            "respostaC": "5 regiões",
+            "respostaD": "6 regiões",
+            "respostaCorreta": "C"
+        },
+        {
+            "pergunta": "Qual é o idiona oficial da China?",
+            "respostaA": "Chines",
+            "respostaB": "Mandarim",
+            "respostaC": "Hindi",
+            "respostaD": "Bengali",
+            "respostaCorreta": "B"
+        },
+        {
+            "pergunta": "Qual país é conhecido como \"Terra do Sol Nascente\"?" ,
+            "respostaA": "Japão",
+            "respostaB": "China",
+            "respostaC": "Taiwan",
+            "respostaD": "Coreia do Norte",
+            "respostaCorreta": "A"
+        },
+        {
+            "pergunta": "Quem pintou o quadro chamado \"Mona Lisa\"?",
+            "respostaA": "Pablo Picasso",
+            "respostaB": "Claude Monet",
+            "respostaC": "Salvador Dalí",
+            "respostaD": "Leonardo da Vinci",
+            "respostaCorreta": "D"
+        },
+        {
+            "pergunta": "Qual esporte utiliza aparelhos como trave, argolas e cavalo com alças?",
+            "respostaA": "escalada",
+            "respostaB": "hipismo",
+            "respostaC": "tênis de mesa",
+            "respostaD": "ginástica olímpica",
+            "respostaCorreta": "D"
+        },
+        {
+            "pergunta": "Como se chama o esporte onde o atleta salta barreiras em cima de um cavalo",
+            "respostaA": "Cavaleirismo",
+            "respostaB": "Montaria",
+            "respostaC": "Hipismo",
+            "respostaD": "Cavalgada",
+            "respostaCorreta": "C"
+        }, 
+        {
+            "pergunta": "Onde se localiza Machu PIcchu?",
+            "respostaA": "Colômbia",
+            "respostaB": "Peru",
+            "respostaC": "Bolívia",
+            "respostaD": "México",
+            "respostaCorreta": "B"
         }
-    ]
+    ]   
 }

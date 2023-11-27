@@ -1,30 +1,24 @@
 let dificuldades = {
     facil: {
         nivel: "facil",
-        tempo: 500,
+        tempo: 700,
         dano: 20,
-        perguntas: 4,
+        perguntas: 10,
     },
     medio: {
         nivel: "medio",
-        tempo: 300,
+        tempo: 500,
         dano: 25,
-        perguntas: 4,
+        perguntas: 10,
     },
     dificil: {
         nivel: "dificil",
-        tempo: 100,
+        tempo: 200,
         dano: 25,
-        perguntas: 4,
-    },
-    insano: {
-        nivel: "insano",
-        tempo: 100,
-        dano: 50,
-        perguntas: 4,
+        perguntas: 10,
     },
     dev: {
-        tempo: 70,
+        tempo: 100,
         dano: 25,
         perguntas: 3,
     }
