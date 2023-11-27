@@ -94,7 +94,7 @@ $(".responder-novamente").click(function () {
     quantidadePerguntas = dificuldade.perguntas - 1;
     $("#final").addClass("invisivel");
     $("#perdeu").addClass("invisivel");
-    $("#vendeu").addClass("invisivel");
+    $("#venceu").addClass("invisivel");
     $("#vida div").css("--vida", 100);
     
     cronometro = setInterval(function () {

@@ -97,12 +97,12 @@
             "respostaCorreta": "A"
         },
         {
-            "pergunta": "Pergunta 14",
-            "respostaA": "resposta a",
-            "respostaB": "resposta b",
-            "respostaC": "resposta c",
-            "respostaD": "resposta d",
-            "respostaCorreta": "D"
+            "pergunta": "Quantos ossos um ser humano adulto tem?",
+            "respostaA": "126",
+            "respostaB": "206",
+            "respostaC": "180",
+            "respostaD": "301",
+            "respostaCorreta": "B"
         },
         {
             "pergunta": "Em qial galáxia nosso planeta se encontra",
