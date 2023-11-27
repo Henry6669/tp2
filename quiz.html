@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz time</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <main>
+        <section id="time">
+            <div></div>
+        </section>
+        <section id="vida">
+            <div></div>
+        </section>
+        <section id="quiz" >
+            <h3 id="pergunta">Uma pergunta qualquer</h3>
+            <ol>
+                <li id="A" data-opcao="A" class="respostas">sla</li>
+                <li id="B" data-opcao="B" class="respostas">alguma coisa</li>
+                <li id="C" data-opcao="C" class="respostas">alguma outra coisa</li>
+                <li id="D" data-opcao="D" class="respostas">sla outra coisa</li>
+            </ol>
+        </section>
+        <section id="final" class="invisivel">
+            <article id="perdeu" class="invisivel">
+                <h1>Você perdeu!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio! Nulla aliquid esse harum, tempora nisi quos ratione expedita, possimus dicta quod ipsa nemo reiciendis dolore? Autem doloribus quisquam tempore!</p>
+                <div>
+                    <button class="voltar-inicio">Voltar ao inicio</button>
+                    <button class="responder-novamente">Responder novamente</button>
+                </div>
+            </article>
+            <article id="venceu" class="invisivel">
+                <h1>Você venceu!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio! Nulla aliquid esse harum, tempora nisi quos ratione expedita, possimus dicta quod ipsa nemo reiciendis dolore? Autem doloribus quisquam tempore!</p>
+                <div>
+                    <button class="voltar-inicio">Voltar ao inicio</button>
+                    <button class="responder-novamente">Responder novamente</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="aplication/json" src="json/perguntas.json"></script>
+    <script src="js/salvarPlayer.js"></script>
+    <script src="js/dificuldade.js"></script>
+    <script src="js/criarPergunta.js"></script>
+</body>
+</html>

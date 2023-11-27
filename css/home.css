@@ -1,34 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Lobster&display=swap');
-:root {
-    --cor-fundo: #191919;
-    --cor-fundo-caixas: rgb(197, 162, 119);
-    --cor-botao: rgb(185, 93, 40);
-    --cor-botao-ativo: #4e4e4e;
-    --cor-texto-especial: rgb(94, 62, 169);
-}
-
-html, body {
-    min-width: 100vw;
-    min-height: 100vh;
-    margin: 0;
-    background-color: var(--cor-fundo);
-}
-
 main {
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
-    background-image: url("imgs/mesa.png"), url("imgs/personagem.png"), url("imgs/fundo-livros.jpg");
+    background-image: url("../imgs/mesa.png"), url("../imgs/personagem.png"), url("../imgs/fundo-livros.jpg");
     background-repeat: repeat, no-repeat, repeat;
     background-position: bottom, center, center;
     background-size: contain, 27%, auto;
     overflow: hidden;
 }
 
-#biblioteca {
+
+#menu, #falas, #config {
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
+}
+
+#menu {
     display: grid; 
     grid-template-columns: 0.75fr 0.75fr 1.5fr; 
     grid-template-rows: 1.4fr 0.5fr 1.1fr; 
@@ -40,7 +31,7 @@ main {
 
 }
 
-#historia {
+#historia, #config {
     position: fixed;
     top: 0;
     left: 0;
@@ -58,8 +49,7 @@ main {
     background-color: var(--cor-fundo-caixas);
     border-radius: 2.5rem;
     font-size: large;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: var(--font-textos);
 }
 
 #historia h2 {
@@ -93,20 +83,9 @@ main {
 
 
 #start { 
-grid-area: start;
-margin-left: auto;
-margin-right: auto;
- }
-
-.invisivel {
-    display: none !important;
-}
-
-section {
-    border-radius: 1vw;
-    /* background-color: var(--cor-fundo-caixas); */
-    background-color: transparent;
-    text-align: center;
+    grid-area: start;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #start {
@@ -123,7 +102,6 @@ section {
     border-radius: 1rem;
     background-color: var(--cor-botao);
     cursor: pointer;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #historia #next {
@@ -139,25 +117,91 @@ section {
     background-color: var(--cor-botao-ativo);
 }
 
-#quiz {
-    min-width: 50vw;
-    min-height: 35vh;
-    padding: 1rem;
-    font-size: larger;
+#falas {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 1fr 1.1fr 0.9fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". falas ."; 
 }
 
-#quiz ol {
-    list-style: upper-alpha;
-    padding: 0 10%;
+#falas div {
+    max-height: 22vh;
+    min-height: 17vh;
+    grid-area: falas;
+    background-color: var(--cor-fundo-caixas);
+    border-radius: 1.5rem;
+    font-size: large;
+    font-family: var(--font-textos);
+    position: relative;
 }
 
-#quiz ol li {
+#falas button {
+    position: absolute;
+    right: 2rem;
+    padding: .1rem .4rem;
+    bottom: 1.5rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--cor-botao);
+    cursor: pointer;
+}
+
+#falas p {
+    margin: 2rem;
     text-align: justify;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: .3rem;
 }
 
-#quiz ol li:hover {
-    background-color: var(--cor-botao-ativo);
+#config article {
+    height: auto;
+    padding: 2rem;
+    width: 40vw;
+    background-color: var(--cor-fundo-caixas);
+    border-radius: 2.5rem;
+    font-size: large;
+    font-family: var(--font-textos);
+}
+
+#config p {
+    margin: 2rem;
+    text-align: justify;
+}
+
+#config p:last-of-type {
+    margin: .5rem 2rem;
+}
+
+#config label {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    margin: 1rem 4rem;
+}
+
+#config input {
+    width: 80%;
+}
+
+#config div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+#config button {
+    /* padding: .0rem .2rem; */
+    width: 7rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--cor-botao);
+    cursor: pointer;
+    font-size: large;
+}
+
+#config select {
+    width: 7rem;
+    font-size: medium;
 }

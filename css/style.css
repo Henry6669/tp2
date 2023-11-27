@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Lobster&display=swap');
+:root {
+    --cor-fundo: #191919;
+    --cor-fundo-caixas: rgb(197, 162, 119);
+    --cor-botao: rgb(185, 93, 40);
+    --cor-botao-ativo: #4e4e4e;
+    --cor-texto-especial: rgb(94, 62, 169);
+    --font-textos:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cor-fundo);
+}
+
+.invisivel {
+    display: none !important;
+}
+
+section {
+    border-radius: 1vw;
+    /* background-color: var(--cor-fundo-caixas); */
+    background-color: transparent;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+}
+
+h3, p, a, button, li {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.errado {
+    border: 2px solid red;
+}
