@@ -9,10 +9,13 @@ $("#start").click(function () {
 let falas = [];
 let falaAtual = 0;
 $.ajax({
-    url: "json/falasIntrodutorias.json",
+    url: $("#falas").data("arquivo"),
     dataType: "json",
     success: function(response) {
         falas = response.falas;
+        if(location.pathname === "/quiz.html") {
+            proximaFala();
+        }
     }
 });
 
@@ -31,6 +34,10 @@ $("#next").click(function () {
 $("#proxima-fala").click(function () {
     if(falaAtual < falas.length - 1)
         proximaFala();
-    else
+    else if($("#falas").data("arquivo") === "json/falasIntrodutorias.json")
         window.location.assign("quiz.html");
+    else if($("#falas").data("arquivo") === "json/falasPorao.json") {
+        comecarQuiz();
+        $("#falas").addClass("invisivel");
+    }
 });

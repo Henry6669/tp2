@@ -22,15 +22,22 @@ function perguntaAleatoria() {
     return perguntas[valor];
 }
 
+function comecarQuiz() {
+    carregaPerguntas();
+    proximaPergunta();
+    quantidadePerguntas = dificuldade.perguntas - player.perguntas.length;
+    $("#time").removeClass("invisivel");
+    $("#vida").removeClass("invisivel");
+    $("#quiz").removeClass("invisivel");
+    iniciaCronometro();
+}
+
 $.ajax({
     url: "json/perguntas.json",
     dataType: "json",
     success: function(response) {
         perguntas = response.perguntas;
         carregarJogadorAtual();
-        carregaPerguntas();
-        proximaPergunta();
-        quantidadePerguntas = dificuldade.perguntas - player.perguntas.length;
     },
     error: function(error) {
         console.log("Erro ao buscar as perguntas: " + error);
@@ -97,16 +104,7 @@ $(".responder-novamente").click(function () {
     $("#venceu").addClass("invisivel");
     $("#vida div").css("--vida", 100);
     
-    cronometro = setInterval(function () {
-        let time =  $("#time div");
-        let timeValor = time.css("--time") - 1;
-        time.css("--time", timeValor);
-    
-        if(timeValor <= 0) {
-            erro();
-            proximaPergunta();
-        }
-    }, dificuldade.tempo)
+    iniciaCronometro();
 });
 
 function acerto() { 
@@ -142,13 +140,16 @@ respostasEl.click(function () {
     proximaPergunta();   
 });
 
-let cronometro = setInterval(function () {
-    let time =  $("#time div");
-    let timeValor = time.css("--time") - 1;
-    time.css("--time", timeValor);
-
-    if(timeValor <= 0) {
-        erro();
-        proximaPergunta();
-    }
-}, dificuldade.tempo)
+let cronometro;
+function iniciaCronometro() {
+    cronometro = setInterval(function () {
+        let time =  $("#time div");
+        let timeValor = time.css("--time") - 1;
+        time.css("--time", timeValor);
+    
+        if(timeValor <= 0) {
+            erro();
+            proximaPergunta();
+        }
+    }, dificuldade.tempo);
+}

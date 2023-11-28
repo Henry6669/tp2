@@ -9,13 +9,19 @@
 </head>
 <body>
     <main>
-        <section id="time">
+        <section id="falas" data-arquivo="json/falasPorao.json">
+            <div>
+                <p id="fala">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button id="proxima-fala">>></button>
+            </div>
+        </section> 
+        <section id="time" class="invisivel">
             ⏱️<div></div>
         </section>
-        <section id="vida">
+        <section id="vida" class="invisivel">
             ❤️<div></div>
         </section>
-        <section id="quiz" >
+        <section id="quiz" class="invisivel">
             <h3 id="pergunta">Uma pergunta qualquer</h3>
             <ol>
                 <li id="A" data-opcao="A" class="respostas">sla</li>
@@ -46,6 +52,7 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="aplication/json" src="json/perguntas.json"></script>
+    <script src="js/transicoes.js"></script>
     <script src="js/salvarPlayer.js"></script>
     <script src="js/dificuldade.js"></script>
     <script src="js/criarPergunta.js"></script>

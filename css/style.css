@@ -37,3 +37,43 @@ h3, p, a, button, li {
 .errado {
     border: 2px solid red;
 }
+
+#falas {
+    display: grid; 
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 1fr 1.1fr 0.9fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". falas ."; 
+}
+
+#falas div {
+    max-height: 22vh;
+    min-height: 17vh;
+    grid-area: falas;
+    background-color: var(--cor-fundo-caixas);
+    border-radius: 1.5rem;
+    font-size: large;
+    font-family: var(--font-textos);
+    position: relative;
+}
+
+#falas button {
+    position: absolute;
+    right: 2rem;
+    padding: .1rem .4rem;
+    bottom: 1.5rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--cor-botao);
+    cursor: pointer;
+}
+
+#falas p {
+    margin: 2rem;
+    text-align: justify;
+}
