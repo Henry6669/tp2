@@ -117,9 +117,9 @@ function acerto() {
 function erro() {
     let vida =  $("#vida div");
     let vidaValor = parseInt(vida.css("--vida")) - dificuldade.dano;
-    $("main").css({"background-image": 'url("/imgs/mesa.png"), url("/imgs/personagem-3.png"), url("/imgs/fundo-porao.jpeg")'});
+    $("main").css({"background-image": 'url("imgs/mesa.png"), url("imgs/personagem-3.png"), url("imgs/fundo-porao.jpeg")'});
     setTimeout(function () {
-        $("main").css({"background-image": 'url("/imgs/mesa.png"), url("/imgs/personagem-2.png"), url("/imgs/fundo-porao.jpeg")'});
+        $("main").css({"background-image": 'url("imgs/mesa.png"), url("imgs/personagem-2.png"), url("imgs/fundo-porao.jpeg")'});
     }, 1000);
     vida.css("--vida", vidaValor);
     daDano()
