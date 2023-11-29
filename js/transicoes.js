@@ -13,9 +13,7 @@ $.ajax({
     dataType: "json",
     success: function(response) {
         falas = response.falas;
-        if(location.pathname === "/quiz.html") {
-            proximaFala();
-        }
+        
     }
 });
 
