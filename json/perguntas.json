@@ -183,6 +183,31 @@
             "respostaC": "Bolívia",
             "respostaD": "México",
             "respostaCorreta": "B"
+        },
+        {
+            "pergunta": "A que temperatura a água ferve em 1atm?",
+            "respostaA": "373 °C",
+            "respostaB": "180 °C",
+            "respostaC": "100 °C",
+            "respostaD": "212 °C",
+            "respostaCorreta": "C"
+        },
+        {
+            "pergunta": "Quem inspirou a criação do personagem Drácula de Bram Stoker",
+            "respostaA": "Vlad III",
+            "respostaB": "Vlad II",
+            "respostaC": "Conde Nosferatu",
+            "respostaD": "Alucard I",
+            "respostaCorreta": "A"
+        },
+        {
+            "pergunta": "Qual destes felinos não é do genero Phantera?",
+            "respostaA": "Leão",
+            "respostaB": "Puma",
+            "respostaC": "Tigre",
+            "respostaD": "Onça",
+            "respostaCorreta": "B"
         }
+
     ]   
 }
